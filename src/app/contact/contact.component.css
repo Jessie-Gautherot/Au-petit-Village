@@ -1,0 +1,27 @@
+.contact {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Comfortaa', sans-serif;
+  color: #151217;
+}
+
+.contact h1 {
+  font-family: 'Bubbleboddy Neue', sans-serif;
+  color: #DA001E;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #151217;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
