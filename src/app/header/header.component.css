@@ -1,0 +1,30 @@
+.custom-toolbar {
+  padding: 0 2rem;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FDD90B;
+  font-family: 'Bubbleboddy Neue', sans-serif;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #FDD90B;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.active {
+  text-decoration: underline;
+}

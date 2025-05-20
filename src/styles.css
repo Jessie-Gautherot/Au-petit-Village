@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+/* Structure de base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F9D0A3;
+  color: #151217;
+}
+
+@font-face {
+  font-family: 'Bubbleboddy Neue';
+  src: url('/fonts/BubbleboddyNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bubbleboddy Neue';
+  src: url('/fonts/BubbleboddyNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+/* etc. */
+
+
+
+
+/* Famille par défaut */
+* {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5 {
+  font-family: 'Bubbleboddy Neue', sans-serif;
+  color: #DA001E;
+  font-weight: 700;
+}
+
+/* Toolbar Material */
+.mat-toolbar {
+  background-color: #151217;
+  color: #FDD90B;
+}
+
+/* Boutons Material */
+.mat-button {
+  font-family: 'Comfortaa', sans-serif;
+  color: #151217;
+}
+
+/* Footer */
+footer {
+  background-color: #FDD90B;
+  color: #151217;
+  text-align: center;
+  padding: 10px;
+}
