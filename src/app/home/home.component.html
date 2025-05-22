@@ -1,13 +1,26 @@
-<p>Plongez dans l’univers chaleureux et indémodable d’Astérix et Obélix avec nos figurines artisanales, 
+<section class="presentation">
+  <h2>AU PETIT VILLAGE</h2>
+  <p>Plongez dans l’univers chaleureux et indémodable d’Astérix et Obélix avec nos figurines artisanales, 
   conçues avec passion et minutie. Chaque pièce rend hommage à l’humour, au courage et à l’amitié 
   qui ont fait le succès des célèbres Gaulois. Chez Au Petit Village, nous faisons revivre la magie 
   des aventures d’antan à travers des créations uniques, fidèles à l’esprit de la bande dessinée.</p>
+</section>
 
+<section class="produit">
+<h2>NOS PRODUITS</h2>
+<div class="catalogue-container">
+  <div *ngFor="let produit of products" class="custom-card">
+    <div class="card-header">
+      <h3 class="product-title">{{ produit.nom }}</h3>
+    </div>
 
+    <img class="product-image" [src]="'assets/' + produit.image" [alt]="produit.nom" />
 
-<div *ngFor="let produit of products" class="product">
-  <h3>{{ produit.nom }}</h3>
-  <img [src]="'assets/' + produit.image" [alt]="produit.nom" />
-  <p>{{ produit.description }}</p>
-  <p><strong>Prix : </strong>{{ produit.prix }} €</p>
+    <div class="card-content">
+      <p class="description">{{ produit.description }}</p>
+      <p class="prix"><strong>{{ produit.prix }} €</strong></p>
+    </div>
+  </div>
 </div>
+</section>
+
