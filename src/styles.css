@@ -53,5 +53,22 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
 }
 
+.tri-buttons button {
+  background-color: #FDD90B;
+  color: #151217;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-family: 'Comfortaa', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tri-buttons button:hover {
+  background-color: #DA001E;
+  color: white;
+}
+
+
 
 
