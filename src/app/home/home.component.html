@@ -11,25 +11,36 @@
 <section class="produit">
   <h2 class="produit-title">NOS PRODUITS</h2>
 
-  <div class="tri-buttons">
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Rechercher un produit"
+    [(ngModel)]="searchTerm"
+  />
+</div>
+
+<div class="tri-buttons">
   <button (click)="toggleSortOrder()">
     Trier par prix : {{ sortOrder === 'asc' ? 'Croissant' : 'Décroissant' }}
   </button>
 </div>
 
-  <div class="catalogue-container">
-    <div *ngFor="let produit of products | sortByPrice: sortOrder" class="custom-card">
-      <div class="card-header">
-        <h3 class="product-title">{{ produit.nom }}</h3>
-      </div>
+<div class="catalogue-container">
+  <div
+    *ngFor="let produit of products 
+      | filterByName: searchTerm 
+      | sortByPrice: sortOrder"
+    class="custom-card"
+  >
+    <div class="card-header">
+      <h3 class="product-title">{{ produit.nom }}</h3>
+    </div>
 
-      <img class="product-image" [src]="'assets/' + produit.image" [alt]="produit.nom" />
+    <img class="product-image" [src]="'assets/' + produit.image" [alt]="produit.nom" />
 
-      <div class="card-content">
-        <p class="description">{{ produit.description }}</p>
-        <p class="prix"><strong>{{ produit.prix }} €</strong></p>
-      </div>
+    <div class="card-content">
+      <p class="description">{{ produit.description }}</p>
+      <p class="prix"><strong>{{ produit.prix }} €</strong></p>
     </div>
   </div>
-</section>
-
+</div>

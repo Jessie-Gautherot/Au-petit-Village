@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ProductsService } from '../produits.service';
 import { Produit } from '../produit.model';
 import { SortByPricePipe } from '../sort-by-price.pipe';
+import { FilterByNamePipe } from '../filter-by-name.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SortByPricePipe],
+  imports: [CommonModule, SortByPricePipe, FilterByNamePipe, FormsModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -15,6 +17,7 @@ export class HomeComponent implements OnInit {
   products: Produit[] = [];
   errorMessage = '';
   sortOrder: 'asc' | 'desc' | null = 'asc';
+  searchTerm: string = '';
 
   constructor(private productsService: ProductsService) {}
 
@@ -30,4 +33,4 @@ export class HomeComponent implements OnInit {
   toggleSortOrder() {
     this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
   }
-}
+} 
