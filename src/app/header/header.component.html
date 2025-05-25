@@ -1,10 +1,22 @@
-<mat-toolbar class="custom-toolbar" role="banner">
-  <h1 class="site-title">Au Petit Village</h1>
-  <span class="spacer"></span>
-  <nav class="nav-links" role="navigation" aria-label="Menu principal">
-    <a routerLink="/" routerLinkActive="active">Accueil</a>
-    <a routerLink="/products" routerLinkActive="active">Produits</a>
-    <a routerLink="/about" routerLinkActive="active">À propos</a>
-  </nav>
-</mat-toolbar>
+<header class="header">
+  <a routerLink="/" class="logo" aria-label="Accueil" (click)="closeMenu()">
+    <img src="assets/Logo.jpg" alt="Logo Au Petit Village" />
+  </a>
+  <div class="nav-burger-container">
+    <nav class="nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+      <a routerLink="/a-propos" routerLinkActive="active">À propos</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+    <button class="burger" (click)="toggleMenu()" aria-label="Ouvrir le menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<nav class="mobile-nav" *ngIf="menuOpen">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Accueil</a>
+  <a routerLink="/a-propos" routerLinkActive="active" (click)="closeMenu()">À propos</a>
+  <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+</nav>
+
 

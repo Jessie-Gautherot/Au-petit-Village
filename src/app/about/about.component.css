@@ -1,0 +1,18 @@
+
+
+.about-content {
+  color: #F9D0A3;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  color: #151217;
+  text-align: center;
+  padding: 2rem;
+}

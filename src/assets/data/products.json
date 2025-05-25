@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nom": "Figurine artisanale d’Astérix",
+    "prix": 82,
+    "description": "Plongez au cœur de la Gaule avec cette figurine faite main représentant Astérix, le célèbre guerrier moustachu imaginé par Goscinny et Uderzo. Chaque exemplaire est entièrement sculpté et peint à la main, garantissant un rendu unique, authentique et fidèle à l’univers de la bande dessinée. Réalisée par un artisan passionné, cette figurine met en avant les détails caractéristiques du personnage : le casque ailé argenté, et la célèbre posture déterminée d’Astérix prêt à en découdre avec les Romains. Le visage, expressif et minutieusement peint, capture à merveille l’esprit espiègle du héros gaulois.",
+    "image": "figurine-asterix.jpg"
+  },
+  {
+    "id": 2,
+    "nom": "Figurine artisanale d’Obélix",
+    "prix": 73,
+    "description": "Voici le fidèle compagnon d’Astérix, sculpté avec soin dans une posture typique : un large sourire au visage, qui revient victorieux d'une rencontre avec les romains. Cette figurine faite main capture toute la bonhomie, la force tranquille et la tendresse d’Obélix, personnage incontournable de l’univers gaulois. Le détail est poussé jusqu’à la boucle de sa ceinture, les rayures bleues de son pantalon, et les tresses rousses retombant sur ses joues rebondies. Une œuvre artisanale qui ravira les amateurs de BD comme les collectionneurs exigeants.",
+    "image": "figurine-obelix.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Figurine artisanale de Panoramix",
+    "prix": 70,
+    "description": "Représenté en pleine préparation de sa célèbre potion magique, Panoramix incarne la sagesse et la tradition dans cette figurine façonnée à la main avec minutie. Son regard concentré, immédiatement la profondeur du personnage. Une pièce raffinée et unique, idéale pour orner une étagère de passionné.",
+    "image": "figurine-panoramix.png"
+  },
+  {
+    "id": 4,
+    "nom": "Figurine artisanale d’Idéfix",
+    "prix": 68,
+    "description": "Cette figurine d’Idéfix, le fidèle compagnon d'Obelix respire la loyauté et la tendresse. Positionné assis, oreilles légèrement penchées et regard espiègle, ce chien miniature est sculpté à la main avec une finesse exceptionnelle. Cette figurine est une véritable déclaration d’amour aux détails.",
+    "image": "figurine-idefix.jpg"
+  }
+]

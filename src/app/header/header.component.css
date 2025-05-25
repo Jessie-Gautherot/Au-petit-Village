@@ -1,30 +1,79 @@
-.custom-toolbar {
-  padding: 0 2rem;
-}
-
-.site-title {
-  font-size: 1.8rem;
-  font-weight: 700;
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #151217;
+  padding: 0 1rem;
+  height: auto;
   color: #FDD90B;
   font-family: 'Bubbleboddy Neue', sans-serif;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
-.spacer {
-  flex: 1 1 auto;
+.logo img {
+  height: 150px;
+}
+
+/* Conteneur pour nav + burger, poussé à droite */
+.nav-burger-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  /* plus besoin de margin-left auto ici */
+  margin-left: 0;
+  font-size: 1.5rem;
 }
 
 .nav-links a {
-  margin-left: 1.5rem;
-  text-decoration: none;
   color: #FDD90B;
-  font-weight: 500;
-  transition: opacity 0.2s;
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-.nav-links a:hover {
-  opacity: 0.7;
+.burger {
+  display: none;
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  color: #FDD90B;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.active {
-  text-decoration: underline;
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .burger {
+    display: inline-block;
+  }
+}
+
+/* Mobile menu */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #151217;
+  padding: 1rem;
+}
+
+.mobile-nav a {
+  color: #FDD90B;
+  font-family: 'Comfortaa', sans-serif;
+  text-decoration: none;
+  margin: 0.25rem 0;
+}
+
+.mobile-nav a.active {
+  font-weight: bold;
+  color: #FDD90B;
 }
