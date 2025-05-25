@@ -5,11 +5,12 @@ import { Produit } from '../produit.model';
 import { SortByPricePipe } from '../sort-by-price.pipe';
 import { FilterByNamePipe } from '../filter-by-name.pipe';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SortByPricePipe, FilterByNamePipe, FormsModule],
+  imports: [CommonModule, SortByPricePipe, FilterByNamePipe, FormsModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

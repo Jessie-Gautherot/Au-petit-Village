@@ -1,0 +1,12 @@
+<section *ngIf="produit; else errorTpl" class="product-detail">
+  <h2>{{ produit.nom }}</h2>
+  <img [src]="'assets/' + produit.image" [alt]="produit.nom" />
+  <div class="black-container">
+  <p class="price"><strong>Prix :</strong> {{ produit.prix }} €</p>
+  <p class="description">{{ produit.description }}</p>
+  </div>
+</section>
+<ng-template #errorTpl>
+  <p class="error-message">{{ errorMessage }}</p>
+</ng-template>
+

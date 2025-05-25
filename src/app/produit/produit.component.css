@@ -1,0 +1,18 @@
+.black-container {
+  margin-top: 1.5rem;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price {
+  color: #FDD90B ;
+}
+
+.description {
+  color: #F9D0A3;
+}

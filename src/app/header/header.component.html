@@ -2,18 +2,15 @@
   <a routerLink="/" class="logo" aria-label="Accueil" (click)="closeMenu()">
     <img src="assets/Logo.jpg" alt="Logo Au Petit Village" />
   </a>
-  
   <div class="nav-burger-container">
     <nav class="nav-links">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
       <a routerLink="/a-propos" routerLinkActive="active">À propos</a>
       <a routerLink="/contact" routerLinkActive="active">Contact</a>
     </nav>
-
     <button class="burger" (click)="toggleMenu()" aria-label="Ouvrir le menu">&#9776;</button>
   </div>
 </header>
-
 
 <!-- Menu mobile -->
 <nav class="mobile-nav" *ngIf="menuOpen">

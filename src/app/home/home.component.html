@@ -10,37 +10,33 @@
 
 <section class="produit">
   <h2 class="produit-title">NOS PRODUITS</h2>
-
-<div class="search-bar">
+  <div class="search-bar">
   <input
     type="text"
-    placeholder="Rechercher un produit"
+    placeholder="Rechercher un produit..."
     [(ngModel)]="searchTerm"
-  />
+    aria-label="Champ de recherche pour les produits"/>
+  <span class="search-icon">🔍</span>
 </div>
-
-<div class="tri-buttons">
-  <button (click)="toggleSortOrder()">
+  <div class="tri-buttons">
+    <button (click)="toggleSortOrder()">
     Trier par prix : {{ sortOrder === 'asc' ? 'Croissant' : 'Décroissant' }}
-  </button>
-</div>
-
-<div class="catalogue-container">
-  <div
+    </button>
+  </div>
+  <div class="catalogue-container">
+    <div
     *ngFor="let produit of products 
       | filterByName: searchTerm 
       | sortByPrice: sortOrder"
-    class="custom-card"
-  >
+    class="custom-card">
     <div class="card-header">
       <h3 class="product-title">{{ produit.nom }}</h3>
     </div>
-
     <img class="product-image" [src]="'assets/' + produit.image" [alt]="produit.nom" />
-
     <div class="card-content">
       <p class="description">{{ produit.description }}</p>
       <p class="prix"><strong>{{ produit.prix }} €</strong></p>
+      <a [routerLink]="['/produit', produit.id]" class="details-button">Voir le produit</a>
     </div>
   </div>
 </div>

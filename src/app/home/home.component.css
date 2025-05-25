@@ -5,7 +5,6 @@
   padding-bottom: 1.5rem;
 }
 
-
 .produit {
   display: flex;
   flex-direction: column;
@@ -53,16 +52,79 @@
 .card-content {
   font-family: "Comfortaa", sans-serif;
   padding: 1rem;
-  
 }
 
 .description {
   color: #F9D0A3;
-  height: 630px;
+  height: 800px;
 }
 
 .prix {
   color: #FDD90B;
   font-weight: bold;
   margin-top: 0.5rem;
+}
+
+.tri-buttons {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.tri-buttons button {
+  background-color: #FDD90B;
+  color: #151217;
+  font-family: 'Comfortaa', sans-serif;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+}
+
+.search-bar {
+  position: relative;
+  min-width: 500px;
+  margin: 1rem auto 2rem auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background: transparent;
+  color: #151217;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+  color: #DA001E;
+  font-size: 1.2rem;
+}
+
+
+.details-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #FDD90B;
+  color: #151217;
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }

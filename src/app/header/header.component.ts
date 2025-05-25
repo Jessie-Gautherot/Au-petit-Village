@@ -19,7 +19,6 @@ export class HeaderComponent {
   closeMenu() {
     this.menuOpen = false;
   }
-
   
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
